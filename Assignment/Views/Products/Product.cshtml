@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome to Product Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to Product Page</h1>
+            <div class="alert alert-info">
+                <strong>Mobile</strong> 
+            </div>
+            <div class="alert alert-success">
+                <strong>Microwave</strong>
+            </div>
+            <div class="alert alert-info">
+                <strong>Tv</strong>
+            </div>
+            <div class="alert alert-success">
+                <strong>Laptop</strong>
+            </div>
+            <div>
+                @Html.ActionLink("Go To Services", "Service", "Services")
+            </div>
+          <div>
+              @Html.ActionLink("Go Back to Home", "Index", "Home")
+          </div>
+           
+        </div>
+    </div>
+</body>
+</html>

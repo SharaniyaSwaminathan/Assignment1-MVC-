@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        #Product {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #1E88E5;
+        }
+
+        #Service {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #673ab7;
+        }
+
+      
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Home</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">Product</a></li>
+                        <li><a href="#section2">Service</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="Product" class="container-fluid">
+        <h1>Products</h1>
+        <p>Mobiles</p>
+        <p>Welcome to Mobiles Shop</p>
+        <h1>
+            @Html.ActionLink("Go to Product Page", "Product", "Products")
+
+
+        </h1>
+         
+       
+    </div>
+    <div id="Service" class="container-fluid">
+        <h1>Services</h1>
+        <p>Mobile Services</p>
+        <p>Welcome to Mobile Services</p>
+        <h1>
+            @Html.ActionLink("Go to Services Page", "Service", "Services")
+        </h1>
+    </div>
+  
+   
+
+</body>
+</html>
